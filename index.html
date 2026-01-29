@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnePro Ration Shop Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="top-nav">
+        <div class="brand">
+          <span class="badge">OnePro</span>
+          <div>
+            <p class="brand-title">Ration Shop Information Hub</p>
+            <p class="brand-subtitle">Stock, beneficiaries, and distribution at a glance</p>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="#shop-info">Shop Info</a>
+          <a href="#stock">Stock</a>
+          <a href="#beneficiaries">Beneficiaries</a>
+          <a href="#distribution">Distribution</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#links">Links</a>
+        </div>
+      </nav>
+
+      <section class="hero-content">
+        <div>
+          <h1>Welcome to the Ration Shop Information Portal</h1>
+          <p>
+            Track real-time stock levels, manage beneficiary registrations, and review daily
+            distribution reports for fair and transparent service delivery.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Register Beneficiary</button>
+            <button class="ghost">View Distribution Report</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Today&apos;s Highlights</h2>
+          <ul>
+            <li>93% stock availability across essential commodities.</li>
+            <li>127 beneficiary visits recorded.</li>
+            <li>Next delivery scheduled: 12 Oct, 9:00 AM.</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="card-grid" id="shop-info">
+        <article class="info-card">
+          <h2>Shop Information</h2>
+          <div class="info-grid">
+            <div>
+              <p class="label">Shop Name</p>
+              <p>OnePro Public Distribution Center</p>
+            </div>
+            <div>
+              <p class="label">Shop ID</p>
+              <p>TN-RTN-5481</p>
+            </div>
+            <div>
+              <p class="label">Manager</p>
+              <p>Ms. Kavitha R.</p>
+            </div>
+            <div>
+              <p class="label">Operating Hours</p>
+              <p>8:00 AM - 6:00 PM (Mon-Sat)</p>
+            </div>
+            <div>
+              <p class="label">Contact</p>
+              <p>+91 98765 43210</p>
+            </div>
+            <div>
+              <p class="label">Address</p>
+              <p>12 Market Street, Ward 5, Coimbatore</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="info-card" id="stock">
+          <h2>Stock Availability</h2>
+          <ul class="stock-list">
+            <li>
+              <span>Rice</span>
+              <span class="pill success">1,240 kg</span>
+              <small>Refill in 4 days</small>
+            </li>
+            <li>
+              <span>Wheat</span>
+              <span class="pill success">860 kg</span>
+              <small>Refill in 6 days</small>
+            </li>
+            <li>
+              <span>Sugar</span>
+              <span class="pill warning">310 kg</span>
+              <small>Low stock</small>
+            </li>
+            <li>
+              <span>Toor Dal</span>
+              <span class="pill warning">190 kg</span>
+              <small>Priority restock</small>
+            </li>
+            <li>
+              <span>Cooking Oil</span>
+              <span class="pill danger">78 L</span>
+              <small>Critical level</small>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="split" id="beneficiaries">
+        <div class="panel">
+          <h2>Beneficiary Category Information</h2>
+          <div class="category-card">
+            <div>
+              <h3>Priority Household</h3>
+              <p>Receives subsidized grains and monthly pulses.</p>
+              <span class="pill info">612 registered</span>
+            </div>
+            <div>
+              <h3>Antyodaya (AAY)</h3>
+              <p>Highest subsidy support for vulnerable families.</p>
+              <span class="pill success">142 registered</span>
+            </div>
+            <div>
+              <h3>Non-Priority (NPHH)</h3>
+              <p>Receives limited grains with market-priced add-ons.</p>
+              <span class="pill warning">98 registered</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Beneficiary Registration Form</h2>
+          <form class="form">
+            <div class="form-row">
+              <label>
+                Full Name
+                <input type="text" placeholder="Enter beneficiary name" />
+              </label>
+              <label>
+                Ration Card Number
+                <input type="text" placeholder="TN-XXXX-XXXX" />
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Category
+                <select>
+                  <option>Priority Household</option>
+                  <option>Antyodaya (AAY)</option>
+                  <option>Non-Priority (NPHH)</option>
+                </select>
+              </label>
+              <label>
+                Mobile Number
+                <input type="tel" placeholder="+91" />
+              </label>
+            </div>
+            <label>
+              Address
+              <textarea rows="3" placeholder="House no, street, ward"></textarea>
+            </label>
+            <button class="primary" type="submit">Submit Registration</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="info-card" id="distribution">
+        <div class="card-header">
+          <h2>Daily Distribution Records</h2>
+          <div class="card-actions">
+            <button class="ghost">Download CSV</button>
+            <button class="ghost">Print Summary</button>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Commodity</th>
+                <th>Quantity Distributed</th>
+                <th>Beneficiary Count</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09 Oct 2024</td>
+                <td>Rice</td>
+                <td>520 kg</td>
+                <td>84</td>
+                <td>Full quota delivered</td>
+              </tr>
+              <tr>
+                <td>09 Oct 2024</td>
+                <td>Wheat</td>
+                <td>360 kg</td>
+                <td>62</td>
+                <td>Delivery completed</td>
+              </tr>
+              <tr>
+                <td>09 Oct 2024</td>
+                <td>Sugar</td>
+                <td>150 kg</td>
+                <td>71</td>
+                <td>Shortage reported</td>
+              </tr>
+              <tr>
+                <td>09 Oct 2024</td>
+                <td>Toor Dal</td>
+                <td>90 kg</td>
+                <td>55</td>
+                <td>Limited stock</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="info-card" id="gallery">
+        <h2>Commodity Image Gallery</h2>
+        <div class="gallery">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80"
+              alt="Rice grains in a wooden bowl"
+            />
+            <figcaption>Rice Stock</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80"
+              alt="Wheat grains"
+            />
+            <figcaption>Wheat Storage</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=500&q=80"
+              alt="Cooking oil bottles"
+            />
+            <figcaption>Cooking Oil</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=500&q=80"
+              alt="Assorted pulses"
+            />
+            <figcaption>Pulses &amp; Dal</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="info-card" id="links">
+        <h2>Important Navigation &amp; External Links</h2>
+        <div class="links-grid">
+          <div>
+            <h3>Quick Navigation</h3>
+            <ul>
+              <li><a href="#home">Home Overview</a></li>
+              <li><a href="#stock">Check Stock</a></li>
+              <li><a href="#beneficiaries">Beneficiary Services</a></li>
+              <li><a href="#distribution">Distribution Report</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>External Resources</h3>
+            <ul>
+              <li><a href="https://nfsa.gov.in" target="_blank" rel="noreferrer">NFSA Guidelines</a></li>
+              <li><a href="https://www.indiapost.gov.in" target="_blank" rel="noreferrer">India Post Payments</a></li>
+              <li><a href="https://www.uidai.gov.in" target="_blank" rel="noreferrer">Aadhaar Services</a></li>
+              <li><a href="https://www.india.gov.in" target="_blank" rel="noreferrer">National Portal of India</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help Desk</h3>
+            <p>Support Hotline: 1800-11-2211</p>
+            <p>Email: support@onepro.in</p>
+            <button class="primary">Raise a Service Ticket</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 OnePro Ration Shop Portal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
