@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commodity Image Gallery</title>
+  </head>
+  <body>
+    <h1>Commodity Gallery</h1>
+
+    <p>Click on a commodity area in the image map for details.</p>
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Staple_food_collage.jpg/640px-Staple_food_collage.jpg"
+      alt="Collage of staple food commodities including grains and sugar"
+      usemap="#commodity-map"
+      width="640"
+      height="361"
+    />
+
+    <map name="commodity-map">
+      <area
+        shape="rect"
+        coords="10,10,210,170"
+        href="stock-list.html#rice"
+        alt="Rice details"
+        title="View Rice Details"
+      />
+      <area
+        shape="rect"
+        coords="220,10,420,170"
+        href="stock-list.html#wheat"
+        alt="Wheat details"
+        title="View Wheat Details"
+      />
+      <area
+        shape="rect"
+        coords="430,10,630,170"
+        href="stock-list.html#sugar"
+        alt="Sugar details"
+        title="View Sugar Details"
+      />
+    </map>
+  </body>
+</html>

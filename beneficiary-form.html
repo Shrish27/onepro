@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beneficiary Registration Form</title>
+  </head>
+  <body>
+    <h1>Beneficiary Registration</h1>
+
+    <form action="#" method="post">
+      <p>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required />
+      </p>
+      <p>
+        <label for="ration-no">Ration Card Number:</label>
+        <input id="ration-no" name="ration_no" type="text" required />
+      </p>
+      <p>
+        <label for="family-size">Family Size:</label>
+        <input id="family-size" name="family_size" type="number" min="1" required />
+      </p>
+      <p>
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+          <option value="">Select category</option>
+          <option value="apl">APL</option>
+          <option value="bpl">BPL</option>
+          <option value="antyodaya">Antyodaya</option>
+        </select>
+      </p>
+      <p>
+        <label for="address">Address:</label><br />
+        <textarea id="address" name="address" rows="4" cols="40" required></textarea>
+      </p>
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    </form>
+  </body>
+</html>
