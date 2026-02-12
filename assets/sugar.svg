@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='500' height='320' viewBox='0 0 500 320'>
+<rect width='500' height='320' fill='#f8f3e8'/>
+<rect x='40' y='60' width='420' height='220' rx='24' fill='#e7ddd0'/>
+<text x='250' y='120' text-anchor='middle' font-size='42' fill='#6f4e37' font-family='Segoe UI'>Sugar</text>
+<rect x='180' y='170' width='45' height='45' fill='#fff' stroke='#b7ab9c'/><rect x='230' y='170' width='45' height='45' fill='#fff' stroke='#b7ab9c'/><rect x='280' y='170' width='45' height='45' fill='#fff' stroke='#b7ab9c'/>
+</svg>

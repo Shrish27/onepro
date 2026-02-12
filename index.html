@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDS Ration Shop Portal - Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-wrap">
+      <div class="brand">
+        <svg class="grain-icon" viewBox="0 0 64 64" aria-hidden="true"><path fill="#ffe8ab" d="M20 54c12-10 16-22 16-40-9 8-15 18-16 40z"/><path fill="#cde58c" d="M44 54C32 44 28 32 28 14c9 8 15 18 16 40z"/></svg>
+        <h1>Public Distribution System – Ration Shop Portal</h1>
+      </div>
+      <nav class="site-nav" aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="stock-list.html">Stock</a></li>
+          <li><a href="beneficiary-form.html">Beneficiaries</a></li>
+          <li><a href="distribution-table.html">Distribution</a></li>
+          <li><a href="#reports">Reports</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Welcome</h2>
+      <p>This portal helps ration shop operators manage beneficiary registration, commodity stock, and daily ration distribution in one place.</p>
+    </section>
+
+    <section class="shelf-grid">
+      <section class="card">
+        <h2>Shop Dashboard</h2>
+        <div data-shop-details></div>
+      </section>
+
+      <section class="card">
+        <h2>Stock Widget</h2>
+        <p>Rice: <strong data-stock-rice></strong></p>
+        <p>Wheat: <strong data-stock-wheat></strong></p>
+        <p>Sugar: <strong data-stock-sugar></strong></p>
+        <div data-low-stock-alert class="alert" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Beneficiary Quick Listing</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Name</th><th>Card Number</th><th>Family</th><th>Category</th><th>Rice Eligibility</th><th>Address</th></tr>
+          </thead>
+          <tbody data-beneficiaries-body></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Search Beneficiary by Ration Card</h2>
+      <form data-search-form>
+        <label for="search-card-index">Ration Card Number</label>
+        <input id="search-card-index" data-search-input required pattern="\d{10}" />
+        <button type="submit">Search</button>
+        <div data-search-output class="alert" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="card" id="reports">
+      <h2>Distribution Report</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Date/Time</th><th>Card</th><th>Name</th><th>Category</th><th>Rice</th><th>Wheat</th><th>Sugar</th></tr>
+          </thead>
+          <tbody data-distribution-body></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Reset System</h2>
+      <button id="reset-system-btn" class="btn-secondary">Reset All Records and Stock</button>
+      <div id="reset-status" class="alert" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">This portal is for demonstration/academic purposes. Data shown may be sample-only.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
