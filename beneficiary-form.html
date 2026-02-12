@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beneficiary Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="site-header-wrap"><div class="brand"><svg class="grain-icon" viewBox="0 0 64 64" aria-hidden="true"><path fill="#ffe8ab" d="M20 54c12-10 16-22 16-40-9 8-15 18-16 40z"/><path fill="#cde58c" d="M44 54C32 44 28 32 28 14c9 8 15 18 16 40z"/></svg><h1>Public Distribution System – Ration Shop Portal</h1></div><nav class="site-nav" aria-label="Main menu"><ul><li><a href="index.html">Dashboard</a></li><li><a href="stock-list.html">Stock</a></li><li><a href="beneficiary-form.html">Beneficiaries</a></li><li><a href="distribution-table.html">Distribution</a></li><li><a href="index.html#reports">Reports</a></li></ul></nav></div></header>
+<main class="container">
+  <section class="card">
+    <h2>Beneficiary Registration Form</h2>
+    <form id="beneficiary-form" class="form-grid" novalidate>
+      <div class="form-field"><label for="name">Name</label><input id="name" name="name" required /></div>
+      <div class="form-field"><label for="card-number">Ration Card Number</label><input id="card-number" name="cardNumber" required inputmode="numeric" /><span id="card-error" class="small alert-error" aria-live="polite"></span></div>
+      <div class="form-field"><label for="family-members">Family Size</label><input id="family-members" type="number" min="1" name="familyMembers" required /></div>
+      <div class="form-field"><label for="category">Category</label><select id="category" name="category" required><option>APL</option><option>BPL</option><option>Antyodaya</option></select></div>
+      <div class="form-field" style="grid-column: 1/-1;"><label for="address">Address</label><textarea id="address" name="address" required></textarea></div>
+      <div style="display:flex; gap:0.6rem; grid-column:1/-1;"><button type="submit">Register Beneficiary</button><button type="button" id="clear-form-btn" class="btn-secondary">Clear Form</button></div>
+    </form>
+    <div id="eligibility-result" class="alert" aria-live="polite"></div>
+  </section>
+
+  <section class="card">
+    <h3>Registered Beneficiaries</h3>
+    <div class="table-wrap"><table><thead><tr><th>#</th><th>Name</th><th>Card Number</th><th>Family</th><th>Category</th><th>Rice Eligibility</th><th>Address</th></tr></thead><tbody data-beneficiaries-body></tbody></table></div>
+  </section>
+</main>
+<footer class="site-footer">This portal is for demonstration/academic purposes. Data shown may be sample-only.</footer>
+<script src="app.js"></script>
+</body>
+</html>

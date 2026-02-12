@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Distribution Records</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="site-header-wrap"><div class="brand"><svg class="grain-icon" viewBox="0 0 64 64" aria-hidden="true"><path fill="#ffe8ab" d="M20 54c12-10 16-22 16-40-9 8-15 18-16 40z"/><path fill="#cde58c" d="M44 54C32 44 28 32 28 14c9 8 15 18 16 40z"/></svg><h1>Public Distribution System – Ration Shop Portal</h1></div><nav class="site-nav" aria-label="Main menu"><ul><li><a href="index.html">Dashboard</a></li><li><a href="stock-list.html">Stock</a></li><li><a href="beneficiary-form.html">Beneficiaries</a></li><li><a href="distribution-table.html">Distribution</a></li><li><a href="index.html#reports">Reports</a></li></ul></nav></div></header>
+<main class="container">
+  <section class="card">
+    <h2>Distribute Ration</h2>
+    <form id="distribution-form" class="form-grid">
+      <div class="form-field"><label for="distribution-card">Ration Card Number</label><input id="distribution-card" required inputmode="numeric" /></div>
+      <div style="align-self:end;"><button type="submit">Distribute</button></div>
+    </form>
+    <div id="distribution-message" class="alert" aria-live="polite"></div>
+    <div data-low-stock-alert class="alert" aria-live="polite"></div>
+  </section>
+
+  <section class="card">
+    <h3>Search Beneficiary</h3>
+    <form data-search-form>
+      <label for="search-card-distribution">Ration Card Number</label>
+      <input id="search-card-distribution" data-search-input required pattern="\d{10}" />
+      <button type="submit">Search</button>
+      <div data-search-output class="alert" aria-live="polite"></div>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Daily Distribution Records</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Transaction log of distributed ration commodities to registered beneficiaries.</caption>
+        <thead><tr><th>#</th><th>Date/Time</th><th>Card</th><th>Name</th><th>Category</th><th>Rice</th><th>Wheat</th><th>Sugar</th></tr></thead>
+        <tbody data-distribution-body>
+          <tr><td>1</td><td>2026-01-01 09:15</td><td>1111111111</td><td>Sample A</td><td>APL</td><td>20 kg</td><td>8 kg</td><td>1 kg</td></tr>
+          <tr><td>2</td><td>2026-01-01 10:20</td><td>2222222222</td><td>Sample B</td><td>BPL</td><td>24 kg</td><td>9 kg</td><td>1 kg</td></tr>
+          <tr><td>3</td><td>2026-01-01 11:30</td><td>3333333333</td><td>Sample C</td><td>Antyodaya</td><td>30 kg</td><td>12 kg</td><td>1 kg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">This portal is for demonstration/academic purposes. Data shown may be sample-only.</footer>
+<script src="app.js"></script>
+</body>
+</html>

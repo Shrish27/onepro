@@ -1,0 +1,9 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='900' height='320' viewBox='0 0 900 320'>
+<rect width='900' height='320' fill='#f2ead8'/>
+<rect x='20' y='40' width='260' height='240' rx='20' fill='#d8c8a8'/>
+<rect x='320' y='40' width='260' height='240' rx='20' fill='#d6b472'/>
+<rect x='620' y='40' width='260' height='240' rx='20' fill='#e7ddd0'/>
+<text x='150' y='170' text-anchor='middle' font-size='44' fill='#6f4e37' font-family='Segoe UI'>Rice</text>
+<text x='450' y='170' text-anchor='middle' font-size='44' fill='#6f4e37' font-family='Segoe UI'>Wheat</text>
+<text x='750' y='170' text-anchor='middle' font-size='44' fill='#6f4e37' font-family='Segoe UI'>Sugar</text>
+</svg>

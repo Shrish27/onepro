@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Availability</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="site-header-wrap"><div class="brand"><svg class="grain-icon" viewBox="0 0 64 64" aria-hidden="true"><path fill="#ffe8ab" d="M20 54c12-10 16-22 16-40-9 8-15 18-16 40z"/><path fill="#cde58c" d="M44 54C32 44 28 32 28 14c9 8 15 18 16 40z"/></svg><h1>Public Distribution System – Ration Shop Portal</h1></div><nav class="site-nav" aria-label="Main menu"><ul><li><a href="index.html">Dashboard</a></li><li><a href="stock-list.html">Stock</a></li><li><a href="beneficiary-form.html">Beneficiaries</a></li><li><a href="distribution-table.html">Distribution</a></li><li><a href="index.html#reports">Reports</a></li></ul></nav></div></header>
+<main class="container">
+  <section class="card">
+    <h2>Stock Availability List</h2>
+    <ol>
+      <li id="rice">Rice - <strong data-stock-rice></strong></li>
+      <li id="wheat">Wheat - <strong data-stock-wheat></strong></li>
+      <li id="sugar">Sugar - <strong data-stock-sugar></strong></li>
+    </ol>
+    <dl>
+      <dt>Rice</dt><dd>Primary monthly grain. Unit: kilograms.</dd>
+      <dt>Wheat</dt><dd>Distributed by category-based family entitlement. Unit: kilograms.</dd>
+      <dt>Sugar</dt><dd>Flat household allocation. Unit: kilograms.</dd>
+    </dl>
+    <div data-low-stock-alert class="alert" aria-live="polite"></div>
+  </section>
+</main>
+<footer class="site-footer">This portal is for demonstration/academic purposes. Data shown may be sample-only.</footer>
+<script src="app.js"></script>
+</body>
+</html>

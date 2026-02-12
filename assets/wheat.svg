@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='500' height='320' viewBox='0 0 500 320'>
+<rect width='500' height='320' fill='#f2ead8'/>
+<rect x='40' y='60' width='420' height='220' rx='24' fill='#d6b472'/>
+<text x='250' y='120' text-anchor='middle' font-size='42' fill='#6f4e37' font-family='Segoe UI'>Wheat</text>
+<path d='M210 220c20-60 20-60 40 0M250 220c20-60 20-60 40 0M290 220c20-60 20-60 40 0' stroke='#8b6b4f' stroke-width='7' fill='none'/>
+</svg>

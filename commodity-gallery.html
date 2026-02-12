@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commodity Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header"><div class="site-header-wrap"><div class="brand"><svg class="grain-icon" viewBox="0 0 64 64" aria-hidden="true"><path fill="#ffe8ab" d="M20 54c12-10 16-22 16-40-9 8-15 18-16 40z"/><path fill="#cde58c" d="M44 54C32 44 28 32 28 14c9 8 15 18 16 40z"/></svg><h1>Public Distribution System – Ration Shop Portal</h1></div><nav class="site-nav" aria-label="Main menu"><ul><li><a href="index.html">Dashboard</a></li><li><a href="stock-list.html">Stock</a></li><li><a href="beneficiary-form.html">Beneficiaries</a></li><li><a href="distribution-table.html">Distribution</a></li><li><a href="index.html#reports">Reports</a></li></ul></nav></div></header>
+<main class="container">
+  <section class="card">
+    <h2>Commodity Image Gallery (Image Map)</h2>
+    <img src="assets/commodities-map.svg" alt="Ration commodities map showing rice, wheat and sugar sections" usemap="#commodity-map" />
+    <map name="commodity-map">
+      <area shape="rect" coords="20,40,280,280" href="stock-list.html#rice" alt="Rice stock section" />
+      <area shape="rect" coords="320,40,580,280" href="stock-list.html#wheat" alt="Wheat stock section" />
+      <area shape="rect" coords="620,40,880,280" href="stock-list.html#sugar" alt="Sugar stock section" />
+    </map>
+    <div class="gallery-grid">
+      <img src="assets/rice.svg" alt="Rice sack placeholder image" />
+      <img src="assets/wheat.svg" alt="Wheat bundle placeholder image" />
+      <img src="assets/sugar.svg" alt="Sugar cubes placeholder image" />
+    </div>
+  </section>
+</main>
+<footer class="site-footer">This portal is for demonstration/academic purposes. Data shown may be sample-only.</footer>
+<script src="app.js"></script>
+</body>
+</html>
